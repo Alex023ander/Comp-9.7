@@ -1,15 +1,15 @@
 # Comp-9.7
 
-public class Ipad extends ElectronicEquipment{
+public class Macbook extends ElectronicEquipment{
     public void message()
 {
-    System.out.println("Attributes of iPad: ");
+    System.out.println("Attributes of Macbook: ");
     System.out.println();
-    super.message(); 
+    super.message(); // explicitly invokes the parent's version
     super.namesOfManufacturers("Apple"); //calls superclass methods
-    super.findWeight(2);
-    super.findCost(799);
-    super.findMonthlyPowerUsage(5);
+    super.findWeight(3);
+    super.findCost(1799);
+    super.findMonthlyPowerUsage(20);
     super.findColor("Space Gray");
     }
 
