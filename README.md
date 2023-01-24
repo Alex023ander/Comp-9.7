@@ -1,37 +1,16 @@
 # Comp-9.7
 
-public void message() //defines message method, prints message for every subclass
-
-    {
-        System.out.println("WARNING: Excessive use may cause strain to eyes "
-            + "and produce headaches!");
+public class iphone extends ElectronicEquipment{
+    public void message()
+{
+    System.out.println("Attributes of iPhone: ");
+    System.out.println();
+    super.message(); // explicitly invokes the parent's version
+    super.namesOfManufacturers("Apple"); //calls superclass methods
+    super.findWeight(1);
+    super.findCost(999);
+    super.findMonthlyPowerUsage(3);
+    super.findColor("Silver");
     }
-
-    public void namesOfManufacturers(String manufacturers) //method definition
-    {
-        System.out.println("Names of Manufacturers: " + manufacturers);
-    }
-
-    public void findWeight(int weight)
-    {
-        System.out.println("Weight: " + weight + " pounds");
-    }
-
-    public void findCost(int cost)
-    {
-        System.out.println("Cost: $" + cost);
-    }
-
-    public void findMonthlyPowerUsage(int monthlyPowerUsage)
-    {
-        System.out.println("Monthly Power Usage: " + monthlyPowerUsage);
-    }
-
-    public void findColor(String color)
-    {
-        System.out.println("Color: " + color); //formats ouput
-        System.out.println("");
-        System.out.println("*");
-        System.out.println("");
-    }
+    
 }
